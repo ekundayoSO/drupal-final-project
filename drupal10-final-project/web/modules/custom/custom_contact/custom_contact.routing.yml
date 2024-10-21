@@ -1,0 +1,15 @@
+custom_contact.form:
+  path: '/contact-me'
+  defaults:
+    _form: '\Drupal\custom_contact\Form\ContactForm'
+    _title: 'Contact Us'
+  requirements:
+    _permission: 'access content'
+
+custom_contact.form_controller:
+  path: '/contact-me'
+  defaults:
+    _controller: '\Drupal\custom_contact\Controller\ContactController::contactForm'
+    _title: 'Contact Us'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,19 @@
+uuid: 5c675c96-1cfe-4106-8738-d73807bdcce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message
+    - node.type.contact_page
+id: node.contact_page.field_message
+field_name: field_message
+entity_type: node
+bundle: contact_page
+label: Message
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

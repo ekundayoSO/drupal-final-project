@@ -1,0 +1,18 @@
+uuid: e8effbdb-1bb0-4383-9c55-d64058e67c92
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'About page'
+type: about_page
+description: 'This is about us page'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,30 @@
+uuid: 7f7c89c3-e411-4240-a6b3-4b7e50ce8a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_form.body
+    - node.type.contact_form
+  module:
+    - text
+    - user
+id: node.contact_form.teaser
+targetEntityType: node
+bundle: contact_form
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

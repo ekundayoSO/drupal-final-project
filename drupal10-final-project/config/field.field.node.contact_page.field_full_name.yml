@@ -1,0 +1,19 @@
+uuid: 77891c54-54c5-425a-a8a8-b01f4deb3572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_name
+    - node.type.contact_page
+id: node.contact_page.field_full_name
+field_name: field_full_name
+entity_type: node
+bundle: contact_page
+label: 'Full Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

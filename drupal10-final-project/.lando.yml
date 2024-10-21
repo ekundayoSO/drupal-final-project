@@ -1,0 +1,8 @@
+name: drupal10-final-project
+recipe: drupal10
+config:
+  webroot: web
+services:
+  appservice:
+    type: phpmyadmin
+

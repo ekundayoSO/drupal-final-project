@@ -1,0 +1,18 @@
+uuid: 9c94996b-18a1-4c45-baae-ee140c2d5a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_form
+id: node.contact_form.title
+field_name: title
+entity_type: node
+bundle: contact_form
+label: 'Contact '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
