@@ -9,7 +9,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:57587/jsonapi/node/home_page")
+      .get("http://localhost:54178/jsonapi/node/home_page")
       .then((response) => {
         const homeData = response.data.data[0];
         setHome(homeData);

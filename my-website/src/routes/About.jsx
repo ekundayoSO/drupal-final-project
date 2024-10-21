@@ -11,7 +11,7 @@ function About() {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:57587/jsonapi/node/about_page?include=field_picture"
+        "http://localhost:54178/jsonapi/node/about_page?include=field_picture"
       )
       .then((response) => {
         const aboutData = response.data.data[0];
@@ -49,7 +49,7 @@ function About() {
         </h1>
         {image && (
           <img
-            src={`http://localhost:57587${image}`}
+            src={`http://localhost:54178${image}`}
             alt="About Image"
             style={{
               objectFit: "cover",

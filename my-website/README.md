@@ -1,6 +1,3 @@
-<img src="Screenshot.png">
-
-
 # Headless Drupal Portfolio
 
 ## Description
@@ -16,19 +13,14 @@ This is a headless Drupal application that serves as a backend for a personal po
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
-- Lando set up
 - [Drupal 10](https://www.drupal.org/) installed and configured
 - Composer (for managing PHP dependencies)
 
 ## Installation
-1. lando composer install
 
 ### Setting Up Drupal
 
-1. **Clone the Drupal and React Repository**:
+1. **Clone the Drupal Repository**:
    ```bash
-   git clone https://github.com/ekundayoSO/drupal-final-project.git
-   cd drupal-final-project.git
-
-
-
+   git clone 
+   cd 
