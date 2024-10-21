@@ -9,7 +9,7 @@ function Projects() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:54178/jsonapi/node/projects_page")
+      .get("http://localhost:57587/jsonapi/node/projects_page")
       .then((response) => {
         const projectsData = response.data.data[0];
         setProjects(projectsData);

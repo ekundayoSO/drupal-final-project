@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // State for mobile menu toggle
+  const [isOpen, setIsOpen] = useState(false); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -10,12 +10,12 @@ const Header = () => {
 
   return (
     <header className="bg-black text-white flex items-center justify-between p-4 sticky top-0">
-      <h1>
-        <Link to="/">My Website</Link>
+      <h1 className="logo">
+        <Link to="/">Ekundayo Sulaimon</Link>
       </h1>
       <button
         onClick={toggleMenu}
-        className="md:hidden focus:outline-none" // Hide button on medium screens and larger
+        className="md:hidden focus:outline-none" 
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

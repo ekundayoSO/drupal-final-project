@@ -10,7 +10,7 @@ function Projects() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:54178/jsonapi/node/article?include=field_image")
+      .get("http://localhost:57587/jsonapi/node/article?include=field_image")
       .then((response) => {
         const blogData = response.data.data[0];
         setBlogs(blogData);
@@ -44,7 +44,7 @@ function Projects() {
         </h1>
         {blogImage && (
           <img
-            src={`http://localhost:54178${blogImage}`}
+            src={`http://localhost:57587${blogImage}`}
             alt="Decouple Image"
             className="mx-auto w-full h-auto max-w-screen-md object-cover"
             style={{ maxHeight: "700px" }}
