@@ -1,6 +1,5 @@
 <img src="Screenshot.png">
 
-
 # Headless Drupal Portfolio
 
 ## Description
