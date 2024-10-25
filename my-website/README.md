@@ -22,5 +22,7 @@ This is a headless Drupal application that serves as a backend for a personal po
 
 1. **Clone the Drupal Repository**:
    ```bash
-   git clone 
-   cd 
+   git clone https://github.com/ekundayoSO/drupal-final-project.git
+   cd drupal-final-project
+
+
