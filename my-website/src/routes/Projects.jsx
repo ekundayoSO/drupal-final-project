@@ -9,14 +9,14 @@ function Projects() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:57587/jsonapi/node/projects_page")
+      .get('http://drupal10-final-project.lndo.site/jsonapi/node/projects_page')
       .then((response) => {
         const projectsData = response.data.data[0];
         setProjects(projectsData);
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching data:", err);
+        console.error('Error fetching data:', err);
         setError(err);
         setLoading(false);
       });

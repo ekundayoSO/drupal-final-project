@@ -10,9 +10,7 @@ function About() {
 
   useEffect(() => {
     axios
-      .get(
-        "http://localhost:57587/jsonapi/node/about_page?include=field_picture"
-      )
+      .get('http://drupal10-final-project.lndo.site/jsonapi/node/about_page?include=field_picture')
       .then((response) => {
         const aboutData = response.data.data[0];
         console.log(aboutData);
@@ -20,9 +18,7 @@ function About() {
         setAbout(aboutData);
 
         if (response.data.included && response.data.included.length > 0) {
-          const imageData = response.data.included.find(
-            (item) => item.type === "file--file"
-          );
+          const imageData = response.data.included.find((item) => item.type === 'file--file');
           if (imageData) {
             const imageUrl = imageData.attributes.uri.url;
             setImage(imageUrl);
@@ -32,7 +28,7 @@ function About() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching data:", err);
+        console.error('Error fetching data:', err);
         setError(err);
         setLoading(false);
       });
@@ -49,11 +45,11 @@ function About() {
         </h1>
         {image && (
           <img
-            src={`http://localhost:57587${image}`}
+            src={`http://drupal10-final-project.lndo.site${image}`}
             alt="About Image"
             style={{
-              objectFit: "cover",
-              borderRadius: "50%",
+              objectFit: 'cover',
+              borderRadius: '50%',
             }}
             className="mx-auto max-w-xs md:max-w-sm lg:max-w-md rounded-full"
           />

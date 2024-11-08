@@ -10,15 +10,13 @@ function Projects() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:57587/jsonapi/node/article?include=field_image")
+      .get('http://drupal10-final-project.lndo.site/jsonapi/node/article?include=field_image')
       .then((response) => {
         const blogData = response.data.data[0];
         setBlogs(blogData);
 
         if (response.data.included && response.data.included.length > 0) {
-          const imageData = response.data.included.find(
-            (item) => item.type === "file--file"
-          );
+          const imageData = response.data.included.find((item) => item.type === 'file--file');
           if (imageData) {
             const imageUrl = imageData.attributes.uri.url;
             setBlogImage(imageUrl);
@@ -27,7 +25,7 @@ function Projects() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching data:", err);
+        console.error('Error fetching data:', err);
         setError(err);
         setLoading(false);
       });
@@ -39,15 +37,13 @@ function Projects() {
   return (
     <div className="bg-image">
       <div className="mb-4 mx-auto px-4 sm:px-6 lg:px-8 text-justify max-w-screen-lg">
-        <h1 className="text-center text-3xl md:text-5xl mb-5 mt-8">
-          {blogs.attributes.title}
-        </h1>
+        <h1 className="text-center text-3xl md:text-5xl mb-5 mt-8">{blogs.attributes.title}</h1>
         {blogImage && (
           <img
-            src={`http://localhost:57587${blogImage}`}
+            src={`http://drupal10-final-project.lndo.site${blogImage}`}
             alt="Decouple Image"
             className="mx-auto w-full h-auto max-w-screen-md object-cover"
-            style={{ maxHeight: "700px" }}
+            style={{ maxHeight: '700px' }}
           />
         )}
         <div

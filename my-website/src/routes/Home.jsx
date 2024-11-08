@@ -9,14 +9,14 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:57587/jsonapi/node/home_page")
+      .get('http://drupal10-final-project.lndo.site/jsonapi/node/home_page')
       .then((response) => {
         const homeData = response.data.data[0];
         setHome(homeData);
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Error fetching data:", err);
+        console.error('Error fetching data:', err);
         setError(err);
         setLoading(false);
       });
