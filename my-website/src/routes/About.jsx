@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+// import { loadMauticTracking } from '../utils/mauticTracking';
+
 import "../App.css";
 
 function About() {
@@ -9,6 +11,7 @@ function About() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // loadMauticTracking();
     axios
       .get('http://drupal10-final-project.lndo.site/jsonapi/node/about_page?include=field_picture')
       .then((response) => {
